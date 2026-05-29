@@ -16,7 +16,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <h1 class="h3 mb-1">Tableau de bord etudiant</h1>
             <p class="text-secondary mb-0">Acces aux cours, ressources et evaluations valides.</p>
         </div>
-        <a class="btn btn-emsp-primary" href="/emsp-digital/etudiant/mes-cours.php">Voir mes cours</a>
+        <a class="btn btn-emsp-primary" href="/emsp-digital/etudiant/mes-cours.php"><i data-lucide="book-open-check"></i> Voir mes cours</a>
     </div>
 
     <div class="row g-3">

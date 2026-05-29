@@ -4,9 +4,12 @@
 $role = current_user_role();
 $brandUrl = is_logged_in() ? dashboard_path_for_role($role) : '/emsp-digital/auth/login.php';
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-emsp">
+<nav class="navbar navbar-expand-lg navbar-light navbar-emsp">
     <div class="container">
-        <a class="navbar-brand fw-semibold" href="<?= escape($brandUrl); ?>">EMSP Digital</a>
+        <a class="navbar-brand fw-semibold" href="<?= escape($brandUrl); ?>">
+            <span class="brand-icon"><i data-lucide="graduation-cap"></i></span>
+            EMSP Digital
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Ouvrir le menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,10 +34,10 @@ $brandUrl = is_logged_in() ? dashboard_path_for_role($role) : '/emsp-digital/aut
             <div class="d-flex align-items-center gap-2">
                 <?php if (is_logged_in()) : ?>
                     <span class="badge text-bg-light"><?= escape(ucfirst((string) $role)); ?></span>
-                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/profil.php">Profil</a>
-                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/logout.php">Deconnexion</a>
+                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/profil.php"><i data-lucide="user"></i> Profil</a>
+                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/logout.php"><i data-lucide="log-out"></i> Deconnexion</a>
                 <?php else : ?>
-                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/login.php">Connexion</a>
+                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/login.php"><i data-lucide="log-in"></i> Connexion</a>
                 <?php endif; ?>
             </div>
         </div>

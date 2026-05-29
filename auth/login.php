@@ -83,7 +83,7 @@ require_once __DIR__ . '/../includes/navbar.php';
                             <input type="password" class="form-control" id="password" name="password" required autocomplete="current-password">
                         </div>
 
-                        <button type="submit" class="btn btn-emsp-primary w-100">Se connecter</button>
+                        <button type="submit" class="btn btn-emsp-primary w-100"><i data-lucide="log-in"></i> Se connecter</button>
                     </form>
                 </div>
             </div>

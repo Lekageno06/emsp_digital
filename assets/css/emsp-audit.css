@@ -1,7 +1,7 @@
 /* Aligne TP CRUD V2 - Correctifs accessibilite, focus visible & contraste WCAG AA */
 
 :root {
-    --emsp-focus: #F59E0B;
+    --emsp-focus: #16A34A;
     --emsp-danger: #B91C1C;
 }
 
@@ -47,5 +47,5 @@ textarea:focus-visible,
 
 .badge.text-bg-light {
     color: #0F172A !important;
-    border: 1px solid #CBD5E1;
+    border: 1px solid #BBF7D0;
 }

@@ -16,7 +16,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <h1 class="h3 mb-1">Tableau de bord enseignant</h1>
             <p class="text-secondary mb-0">Organisation des cours, seances et evaluations.</p>
         </div>
-        <a class="btn btn-emsp-primary" href="/emsp-digital/enseignant/gerer-cours.php">Gerer les cours</a>
+        <a class="btn btn-emsp-primary" href="/emsp-digital/enseignant/gerer-cours.php"><i data-lucide="book-open"></i> Gerer les cours</a>
     </div>
 
     <div class="row g-3">

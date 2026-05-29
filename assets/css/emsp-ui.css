@@ -1,0 +1,275 @@
+/* Aligne TP CRUD V2 - Interface moderne vert/blanc, responsive et accessible */
+
+:root {
+    --emsp-primary: #16A34A;
+    --emsp-primary-dark: #15803D;
+    --emsp-primary-soft: #DCFCE7;
+    --emsp-bg: #F9FAFB;
+    --emsp-surface: #FFFFFF;
+    --emsp-text: #111827;
+    --emsp-muted: #6B7280;
+    --emsp-border: #E5E7EB;
+    --emsp-danger: #DC2626;
+    --emsp-warning: #D97706;
+    --emsp-radius: 12px;
+    --emsp-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+    --emsp-transition: 170ms ease;
+}
+
+* {
+    letter-spacing: 0;
+}
+
+body {
+    min-width: 360px;
+    background: var(--emsp-bg);
+    color: var(--emsp-text);
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+    color: var(--emsp-primary-dark);
+}
+
+.navbar-emsp {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid var(--emsp-border);
+    box-shadow: 0 8px 22px rgba(17, 24, 39, 0.04);
+    backdrop-filter: blur(14px);
+}
+
+.navbar-emsp .navbar-brand,
+.navbar-emsp .nav-link {
+    color: var(--emsp-text);
+}
+
+.navbar-emsp .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+}
+
+.brand-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    color: var(--emsp-primary);
+    background: var(--emsp-primary-soft);
+    border: 1px solid #BBF7D0;
+    border-radius: var(--emsp-radius);
+}
+
+.navbar-emsp .nav-link {
+    border-radius: 10px;
+    font-weight: 500;
+    transition: color var(--emsp-transition), background var(--emsp-transition);
+}
+
+.navbar-emsp .nav-link:hover,
+.navbar-emsp .nav-link:focus {
+    color: var(--emsp-primary-dark);
+    background: var(--emsp-primary-soft);
+}
+
+.navbar-toggler {
+    border-color: var(--emsp-border);
+}
+
+main.container,
+.container.py-4,
+.container.py-5 {
+    animation: fadeInUp 420ms ease both;
+}
+
+.card,
+.modal-content,
+.alert,
+.form-control,
+.form-select,
+.dataTables_wrapper,
+.dt-container {
+    border-radius: var(--emsp-radius);
+}
+
+.card {
+    border: 1px solid var(--emsp-border) !important;
+    box-shadow: var(--emsp-shadow) !important;
+}
+
+.card-body {
+    padding: 1.35rem;
+}
+
+.text-secondary,
+.form-text {
+    color: var(--emsp-muted) !important;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    border-radius: var(--emsp-radius);
+    font-weight: 600;
+    transition: transform var(--emsp-transition), background-color var(--emsp-transition), border-color var(--emsp-transition), color var(--emsp-transition);
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.btn:active {
+    animation: pulseClick 260ms ease;
+}
+
+.btn-emsp-primary,
+.btn-emsp-success,
+.btn-primary,
+.btn-success {
+    --bs-btn-bg: var(--emsp-primary);
+    --bs-btn-border-color: var(--emsp-primary);
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-hover-bg: var(--emsp-primary-dark);
+    --bs-btn-hover-border-color: var(--emsp-primary-dark);
+    --bs-btn-hover-color: #FFFFFF;
+}
+
+.btn-outline-light {
+    --bs-btn-color: var(--emsp-text);
+    --bs-btn-border-color: var(--emsp-border);
+    --bs-btn-hover-bg: var(--emsp-primary-soft);
+    --bs-btn-hover-border-color: #BBF7D0;
+    --bs-btn-hover-color: var(--emsp-primary-dark);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--emsp-primary-dark);
+    --bs-btn-border-color: #BBF7D0;
+    --bs-btn-hover-bg: var(--emsp-primary-soft);
+    --bs-btn-hover-border-color: #86EFAC;
+    --bs-btn-hover-color: var(--emsp-primary-dark);
+}
+
+.badge.text-bg-primary,
+.badge.text-bg-light {
+    color: var(--emsp-primary-dark) !important;
+    background: var(--emsp-primary-soft) !important;
+    border: 1px solid #BBF7D0;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table > :not(caption) > * > * {
+    padding: 1rem;
+    border-bottom-color: var(--emsp-border);
+}
+
+.table thead th {
+    color: var(--emsp-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-bg-type: #FAFAFA;
+}
+
+.table-hover tbody tr,
+.table tbody tr {
+    transition: background-color var(--emsp-transition);
+}
+
+.table-hover tbody tr:hover,
+.table tbody tr:hover {
+    background: #F7FEF9;
+}
+
+.form-control,
+.form-select {
+    min-height: 44px;
+    border-color: var(--emsp-border);
+    transition: border-color var(--emsp-transition), box-shadow var(--emsp-transition);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--emsp-primary);
+    box-shadow: 0 0 0 0.25rem rgba(22, 163, 74, 0.12);
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(-8px);
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+.modal-content {
+    border: 1px solid var(--emsp-border);
+    box-shadow: var(--emsp-shadow);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--emsp-border);
+}
+
+.alert {
+    border: 1px solid var(--emsp-border);
+}
+
+.qwen-widget .card {
+    border-radius: var(--emsp-radius);
+}
+
+.qwen-widget .btn {
+    min-height: 42px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseClick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .btn-group {
+        flex-wrap: wrap;
+    }
+}

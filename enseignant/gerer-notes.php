@@ -55,7 +55,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <h1 class="h3 mb-1">Evaluations et notes</h1>
             <p class="text-secondary mb-0">Creation des evaluations et saisie des notes.</p>
         </div>
-        <button type="button" class="btn btn-emsp-primary" data-bs-toggle="modal" data-bs-target="#evaluationModal">Ajouter une evaluation</button>
+        <button type="button" class="btn btn-emsp-primary" data-bs-toggle="modal" data-bs-target="#evaluationModal"><i data-lucide="plus"></i> Ajouter une evaluation</button>
     </div>
 
     <?php if ($teacherId <= 0) : ?>

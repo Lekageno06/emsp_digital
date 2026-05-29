@@ -35,7 +35,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <h1 class="h3 mb-1">Gestion des utilisateurs</h1>
             <p class="text-secondary mb-0">CRUD admin avec modales Bootstrap et requetes PDO preparees.</p>
         </div>
-        <button type="button" class="btn btn-emsp-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">Ajouter</button>
+        <button type="button" class="btn btn-emsp-primary" data-bs-toggle="modal" data-bs-target="#addUserModal"><i data-lucide="plus"></i> Ajouter</button>
     </div>
 
     <div id="crudAlert" class="alert d-none" role="alert"></div>

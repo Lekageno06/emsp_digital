@@ -40,7 +40,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <h1 class="h3 mb-1">Gestion des cours</h1>
             <p class="text-secondary mb-0">Cours, planification des seances et suivi des inscriptions.</p>
         </div>
-        <button type="button" class="btn btn-emsp-primary" data-bs-toggle="modal" data-bs-target="#courseModal">Ajouter un cours</button>
+        <button type="button" class="btn btn-emsp-primary" data-bs-toggle="modal" data-bs-target="#courseModal"><i data-lucide="plus"></i> Ajouter un cours</button>
     </div>
 
     <?php if ($teacherId <= 0) : ?>

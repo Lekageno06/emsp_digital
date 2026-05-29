@@ -9,6 +9,10 @@
     <?php endif; ?>
     <script>
         $(function () {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
             $('.datatable-fr').each(function () {
                 if ($.fn.DataTable.isDataTable(this)) {
                     return;

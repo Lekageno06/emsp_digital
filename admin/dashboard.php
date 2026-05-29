@@ -16,7 +16,7 @@ require_once __DIR__ . '/../includes/navbar.php';
             <h1 class="h3 mb-1">Tableau de bord admin</h1>
             <p class="text-secondary mb-0">Gestion de la plateforme EMSP Digital.</p>
         </div>
-        <a class="btn btn-emsp-primary" href="/emsp-digital/admin/gerer-utilisateurs.php">Gerer les utilisateurs</a>
+        <a class="btn btn-emsp-primary" href="/emsp-digital/admin/gerer-utilisateurs.php"><i data-lucide="users"></i> Gerer les utilisateurs</a>
     </div>
 
     <div class="row g-3">
