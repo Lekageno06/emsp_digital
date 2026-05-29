@@ -31,6 +31,7 @@ $brandUrl = is_logged_in() ? dashboard_path_for_role($role) : '/emsp-digital/aut
             <div class="d-flex align-items-center gap-2">
                 <?php if (is_logged_in()) : ?>
                     <span class="badge text-bg-light"><?= escape(ucfirst((string) $role)); ?></span>
+                    <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/profil.php">Profil</a>
                     <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/logout.php">Deconnexion</a>
                 <?php else : ?>
                     <a class="btn btn-sm btn-outline-light" href="/emsp-digital/auth/login.php">Connexion</a>

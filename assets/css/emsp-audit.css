@@ -1,0 +1,51 @@
+/* Aligne TP CRUD V2 - Correctifs accessibilite, focus visible & contraste WCAG AA */
+
+:root {
+    --emsp-focus: #F59E0B;
+    --emsp-danger: #B91C1C;
+}
+
+a {
+    text-underline-offset: 0.18em;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+    outline: 3px solid var(--emsp-focus);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.text-secondary {
+    color: #475569 !important;
+}
+
+.btn-danger {
+    --bs-btn-bg: var(--emsp-danger);
+    --bs-btn-border-color: var(--emsp-danger);
+    --bs-btn-hover-bg: #991B1B;
+    --bs-btn-hover-border-color: #991B1B;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+.table th {
+    color: #0F172A;
+}
+
+.badge.text-bg-light {
+    color: #0F172A !important;
+    border: 1px solid #CBD5E1;
+}
